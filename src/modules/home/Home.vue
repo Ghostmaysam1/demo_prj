@@ -7,26 +7,26 @@ import Header from './sections/Header.vue';
 </script>
 
 <template>
-    <div id="home" class="scroll-smooth scroll-hidden snap-y snap-mandatory overflow-auto h-screen">
-        <Section>
+    <div id="home" class="scroll-smooth flex flex-col gap-1 scroll-hidden snap-y snap-mandatory overflow-auto h-screen">
+        <Section id="header">
             <Header />
         </Section>
-        <Section>
+        <Section id="section2">
             <div class="h-screen flex items-center justify-center">
                 <h1 class="text-5xl font-bold">صفحه دوم</h1>
             </div>
         </Section>
-        <Section>
+        <Section id="section3">
             <div class="h-screen flex items-center justify-center">
                 <h1 class="text-5xl font-bold">صفحه سوم</h1>
             </div>
         </Section>
-        <Section>
+        <Section id="section4">
             <div class="h-screen flex items-center justify-center">
                 <h1 class="text-5xl font-bold">صفحه چهارم</h1>
             </div>
         </Section>
-        <Section>
+        <Section id="section5">
             <div class="h-screen flex items-center justify-center">
                 <h1 class="text-5xl font-bold">صفحه پنجم</h1>
             </div>
