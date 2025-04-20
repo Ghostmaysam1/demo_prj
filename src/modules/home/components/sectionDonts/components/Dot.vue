@@ -1,14 +1,32 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
+import useStore from '@/store';
+const store = useStore();
 const dot = ref<boolean>(false);
+
+
 const check = () => {
-    dot.value = !dot.value;
+    if(!dot.value) {
+        document.querySelector(`#${props.section}`)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+        });
+    }
+
 }
 
-watch(dot, ()=>{
 
-    console.log(dot.value)
-})
+const props = defineProps<{
+    section: string;
+}>();
+
+watch(() => store.section, (newValue) => {
+    if (newValue === props.section) {
+        dot.value = true;
+    } else {
+        dot.value = false;
+    }
+}, { immediate: true });
 </script>
 
 <template>
