@@ -9,7 +9,7 @@ const isMobile = computed(() => {
 </script>
 
 <template>
-    <nav class="px-3 sticky top-0 py-2 flex justify-between items-center bg-blue-400/5 border-b border-blue-300/40 backdrop-blur-sm">
+    <nav class="px-3 fixed w-full top-0 py-2 flex justify-between items-center bg-blue-400/5 border-b border-blue-300/40 backdrop-blur-sm">
         <div class="flex z-10 font-bold items-center gap-2"><img src="@pics/logo.svg" alt="Logo"> نام شرکت</div>
 
 
