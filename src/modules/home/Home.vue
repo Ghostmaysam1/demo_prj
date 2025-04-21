@@ -7,7 +7,7 @@ import Header from './sections/Header.vue';
 </script>
 
 <template>
-    <div id="home" class="scroll-smooth flex flex-col gap-1 scroll-hidden snap-y snap-mandatory overflow-auto h-screen">
+    <div id="home" class="scroll-smooth md:px-[100px] px-[20px] flex flex-col gap-1 scroll-hidden snap-y snap-mandatory overflow-auto h-screen">
         <Section id="header">
             <Header />
         </Section>
