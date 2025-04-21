@@ -4,17 +4,16 @@ import SectionDots from './components/sectionDonts/SectionDots.vue';
 
 // Sections
 import Header from './sections/Header.vue';
+import Services from './sections/services/Services.vue';
 </script>
 
 <template>
-    <div id="home" class="scroll-smooth md:px-[100px] px-[20px] flex flex-col gap-1 scroll-hidden snap-y snap-mandatory overflow-auto h-screen">
+    <div id="home" class="scroll-smooth md:px-[60px] px-[20px] flex flex-col gap-1 scroll-hidden snap-y snap-mandatory overflow-auto h-screen">
         <Section id="header">
             <Header />
         </Section>
         <Section id="section2">
-            <div class="h-screen flex items-center justify-center">
-                <h1 class="text-5xl font-bold">صفحه دوم</h1>
-            </div>
+            <Services />
         </Section>
         <Section id="section3">
             <div class="h-screen flex items-center justify-center">
