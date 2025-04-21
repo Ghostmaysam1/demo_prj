@@ -31,6 +31,11 @@ import Header from './sections/Header.vue';
                 <h1 class="text-5xl font-bold">صفحه پنجم</h1>
             </div>
         </Section>
+        <Section id="section6">
+            <div class="h-screen flex items-center justify-center">
+                <h1 class="text-5xl font-bold">صفحه ششم</h1>
+            </div>
+        </Section>
 
 
         <!-- Dots -->
