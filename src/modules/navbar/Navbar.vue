@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useWindowSize } from '@vueuse/core';
-
-const { width } = useWindowSize();
-const isMobile = computed(() => {
-    return width.value < 768;
-});
+import {isMobile} from '@/utils/windowSize'
 
 function scrollToEl(el: string) {
     let element = document.querySelector(el);
