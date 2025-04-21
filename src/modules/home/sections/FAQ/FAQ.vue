@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Accordion from './components/accordion/Accordion.vue';
+import Accordion from '@modules/accordion/Accordion.vue';
 const list: {question: string, answer: string}[] = [
   {
     question: 'React & vue',
@@ -38,7 +38,7 @@ const list: {question: string, answer: string}[] = [
 
 <template>
   <div class="h-screen flex gap-7 flex-col items-center md:pt-20 sm:pt-16 py-10">
-    <div class="flex flex-col gap-[1px]">
+    <div class="flex">
         <h3 class="bg-[#B9FF66] text-3xl px-2 rounded-lg">ابزار ها</h3>
     </div>
     <div class="flex flex-col gap-5 overflow-auto scroll-hidden py-5">
