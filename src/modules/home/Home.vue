@@ -7,6 +7,7 @@ import Header from './sections/header/Header.vue';
 import Services from './sections/services/Services.vue';
 import FAQ from './sections/FAQ/FAQ.vue';
 import Happy_Clients from './sections/happy_clients/Happy_Clients.vue';
+import ContactUs from './sections/contact_us/ContactUs.vue';
 </script>
 
 <template>
@@ -24,9 +25,7 @@ import Happy_Clients from './sections/happy_clients/Happy_Clients.vue';
             <Happy_Clients />
         </Section>
         <Section id="section5">
-            <div class="h-screen flex items-center justify-center">
-                <h1 class="text-5xl font-bold">صفحه پنجم</h1>
-            </div>
+            <ContactUs />
         </Section>
         <Section id="section6">
             <div class="h-screen flex items-center justify-center">
