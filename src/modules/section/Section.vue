@@ -51,7 +51,7 @@ watch(() => store.sectionVisible, (newValue) => {
 </script>
 
 <template>
-    <section ref="sectionEl" class="h-screen snap-center">
+    <section ref="sectionEl" class="min-h-screen snap-center">
         <slot></slot>
     </section>
 </template>

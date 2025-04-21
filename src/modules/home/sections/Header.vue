@@ -4,7 +4,7 @@ import { isMobile } from '@/utils/windowSize';
 </script>
 
 <template>
-    <div class="h-screen relative md:py-[60px] py-[20px]">
+    <div class="h-screen relative md:py-[60px] py-[20px] overflow-hidden">
         <Navbar />
         <span class="block h-[70px]"></span> <!-- gap -->
         <div>
