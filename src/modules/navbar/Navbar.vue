@@ -19,11 +19,11 @@ function scrollToEl(el: string) {
 </script>
 
 <template>
-    <nav class="px-3 fixed z-10 w-full top-0 py-2 flex justify-between items-center bg-blue-400/5 border-b border-blue-300/40 backdrop-blur-sm">
-        <div class="flex z-10 font-bold items-center gap-2"><img src="@pics/logo.svg" alt="Logo"> نام شرکت</div>
+    <nav class="px-3 col-span-10 h-[68px] flex justify-between items-center">
+        <div class="flex font-bold items-center md:text-2xl text-xl gap-2"><img src="@pics/logo.svg" alt="Logo"> برج فناوری </div>
 
 
-        <div v-if="!isMobile" class="absolute left-1/2 transform -translate-x-1/2 z-0">
+        <div v-if="!isMobile" class="">
             <ul class="flex text-black/70 font-bold items-center gap-5 justify-around">
                 <li @click="()=> scrollToEl('#header')" class="cursor-pointer hover:text-black/100 transition-all transition-300">اصلی</li>
                 <li @click="()=> scrollToEl('#section2')" class="cursor-pointer hover:text-black/100 transition-all transition-300">خدمات</li>
@@ -33,7 +33,7 @@ function scrollToEl(el: string) {
                 <li @click="()=> scrollToEl('#section6')" class="cursor-pointer hover:text-black/100 transition-all transition-300">ارتباطات</li>
             </ul>
         </div>
-        <div v-else class="z-10">
+        <div v-else>
             <img  src="@pics/icons/menu.svg" alt="Menu" class="w-7 cursor-pointer">
         </div>
     </nav>
