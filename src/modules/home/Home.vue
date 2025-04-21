@@ -3,8 +3,9 @@ import Section from '../section/Section.vue';
 import SectionDots from './components/sectionDonts/SectionDots.vue';
 
 // Sections
-import Header from './sections/Header.vue';
+import Header from './sections/header/Header.vue';
 import Services from './sections/services/Services.vue';
+import FAQ from './sections/FAQ/FAQ.vue';
 </script>
 
 <template>
@@ -16,9 +17,7 @@ import Services from './sections/services/Services.vue';
             <Services />
         </Section>
         <Section id="section3">
-            <div class="h-screen flex items-center justify-center">
-                <h1 class="text-5xl font-bold">صفحه سوم</h1>
-            </div>
+            <FAQ />
         </Section>
         <Section id="section4">
             <div class="h-screen flex items-center justify-center">
