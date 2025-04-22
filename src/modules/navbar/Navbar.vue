@@ -20,11 +20,10 @@ function scrollToEl(el: string) {
         <div v-if="!isMobile" class="">
             <ul class="flex text-black/70 font-bold items-center gap-5 justify-around">
                 <li @click="()=> scrollToEl('#header')" class="cursor-pointer hover:text-black/100 transition-all transition-300">اصلی</li>
-                <li @click="()=> scrollToEl('#section2')" class="cursor-pointer hover:text-black/100 transition-all transition-300">خدمات</li>
-                <li @click="()=> scrollToEl('#section3')" class="cursor-pointer hover:text-black/100 transition-all transition-300">درباره ما</li>
-                <li @click="()=> scrollToEl('#section4')" class="cursor-pointer hover:text-black/100 transition-all transition-300">کارکنان</li>
-                <li @click="()=> scrollToEl('#section5')" class="cursor-pointer hover:text-black/100 transition-all transition-300">نظرات</li>
-                <li @click="()=> scrollToEl('#section6')" class="cursor-pointer hover:text-black/100 transition-all transition-300">ارتباطات</li>
+                <li @click="()=> scrollToEl('#services')" class="cursor-pointer hover:text-black/100 transition-all transition-300">خدمات</li>
+                <li @click="()=> scrollToEl('#faq')" class="cursor-pointer hover:text-black/100 transition-all transition-300">ابزار ها</li>
+                <li @click="()=> scrollToEl('#happy_clients')" class="cursor-pointer hover:text-black/100 transition-all transition-300">نظرات</li>
+                <li @click="()=> scrollToEl('#contact_us')" class="cursor-pointer hover:text-black/100 transition-all transition-300">ارتباطات</li>
             </ul>
         </div>
         <div v-else>
