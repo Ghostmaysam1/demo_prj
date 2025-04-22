@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import {reactive} from 'vue'
+import { reactive, ref, computed } from 'vue'
 import { width } from '@/utils/windowSize'
+
+const submit = ref(false);
 
 const form = reactive<{name: string, email: string, message: string}>({
     name: '',
@@ -9,8 +11,27 @@ const form = reactive<{name: string, email: string, message: string}>({
 })
 
 const handleSubmit = () => {
-    
+  submit.value = true;
+    if (!form.name || !form.email || !form.message) {
+        return
+    }
+    if (!testEmail.value) {
+        return
+    }
+
+    // Here you can send the form data to your server or API
+    console.log('Form submitted:', form)
+    alert('پیام شما با موفقیت ارسال شد');
+    submit.value = false;
+    form.name = ''
+    form.email = ''
+    form.message = ''
 }
+
+const testEmail = computed(() => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(form.email);
+})
 </script>
 
 <template>
@@ -24,16 +45,20 @@ const handleSubmit = () => {
             <label class="flex flex-col gap-3">
                 <span class="text-2xl">نام</span>
                 <input v-model="form.name" type="text" class="border border-black/80 outline-none rounded-[14px] w-full px-4 py-2" />
+                <p v-if="submit && !form.name" class="text-sm font-thin text-red-600/70">لطفا فیلد را پر کنید</p>
             </label>
 
             <label class="flex flex-col gap-3">
                 <span class="text-2xl">ایمیل*</span>
                 <input v-model="form.email" type="text" dir="ltr" class="border border-black/80 outline-none rounded-[14px] w-full px-4 py-2" />
+                <p v-if="submit && !form.email" class="text-sm font-thin text-red-600/70">لطفا فیلد را پر کنید</p>
+                <p v-else-if="submit && !testEmail" class="text-sm font-thin text-red-600/70">ایمیل نا معتبر</p>
             </label>
 
             <label class="flex flex-col gap-3">
                 <span class="text-2xl">پیام*</span>
                 <textarea v-model="form.message" type="text" class="border max-h-[140px] h-140px min-h-[70px] border-black/80 outline-none rounded-[14px] w-full px-4 py-2" />
+                <p v-if="submit && !form.message" class="text-sm font-thin text-red-600/70">لطفا فیلد را پر کنید</p>
             </label>
 
             <button class="bg-slate-900 cursor-pointer text-slate-50 text-xl flex justify-center items-center py-4 rounded-2xl">ارسال پیام</button>
