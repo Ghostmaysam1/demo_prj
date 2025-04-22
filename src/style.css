@@ -1,15 +1,15 @@
 @font-face {
   font-family: iran-sans;
-  src: url('@fonts/IRANSansX-Regular.woff') format('woff'),
-       url('@fonts/IRANSansX-Regular.woff2') format('woff2');
+  src: url('@fonts/iransans/IRANSansX-Regular.woff') format('woff'),
+       url('@fonts/iransans/IRANSansX-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: iran-sans;
-  src: url('@fonts/IRANSansX-Bold.woff') format('woff'),
-       url('@fonts/IRANSansX-Bold.woff2') format('woff2');
+  src: url('@fonts/iransans/IRANSansX-Bold.woff') format('woff'),
+       url('@fonts/iransans/IRANSansX-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
