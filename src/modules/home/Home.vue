@@ -6,7 +6,7 @@ import SectionDots from './components/sectionDonts/SectionDots.vue';
 import Header from './sections/header/Header.vue';
 import Services from './sections/services/Services.vue';
 import FAQ from './sections/FAQ/FAQ.vue';
-import Happy_Clients from './sections/happy_clients/Happy_Clients.vue';
+import HappyClients from './sections/happy_clients/HappyClients.vue';
 import ContactUs from './sections/contact_us/ContactUs.vue';
 </script>
 
@@ -15,22 +15,17 @@ import ContactUs from './sections/contact_us/ContactUs.vue';
         <Section id="header">
             <Header />
         </Section>
-        <Section id="section2">
+        <Section id="services">
             <Services />
         </Section>
-        <Section id="section3">
+        <Section id="faq">
             <FAQ />
         </Section>
-        <Section id="section4">
-            <Happy_Clients />
+        <Section id="happy_clients">
+            <HappyClients />
         </Section>
-        <Section id="section5">
+        <Section id="contact_us">
             <ContactUs />
-        </Section>
-        <Section id="section6">
-            <div class="h-screen flex items-center justify-center">
-                <h1 class="text-5xl font-bold">صفحه ششم</h1>
-            </div>
         </Section>
 
 
