@@ -14,7 +14,7 @@ import { isMobile } from '@/utils/windowSize';
                     <h3 class="font-thin text-lg col-span-3 row-span-3 row-start-5">"ما عاشق کدنویسی و ساختن چیزای باحال با تکنولوژی‌های روز دنیا هستیم. از طراحی تا توسعه، کنار شماییم تا ایده‌هات رو به نرم‌افزارهایی سریع، مقیاس‌پذیر و کاربردی تبدیل کنیم."</h3>
                     <button class="bg-slate-900 w-full text-slate-50 max-w-[480px] text-xl flex justify-center items-center py-4 rounded-2xl">معرفی</button>
                 </div>
-                <img src="@pics/men.png" alt="me" class="h-80 object-cover">
+                <img src="/men.png" alt="me" class="h-80 object-cover">
             </div>
 
             <div v-else class="grid grid-cols-2 gap-5">
@@ -26,7 +26,7 @@ import { isMobile } from '@/utils/windowSize';
                     <button class="bg-slate-900 text-slate-50 text-xl flex justify-center items-center py-4 rounded-2xl">معرفی</button>
                 </div>
                 <div class="flex justify-center items-center h-90">
-                    <img src="@pics/men.png" alt="me" class="h-[550px] bottom-0 z-50 absolute">
+                    <img src="/men.png" alt="me" class="h-[550px] bottom-0 z-50 absolute">
                 </div>
             </div>
         </div>

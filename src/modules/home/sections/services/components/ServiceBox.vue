@@ -33,8 +33,8 @@ enum TextColor {
                     <p v-for="(txt, index) in props.label.split(',')" :key="index" :style="{background: Highlight[props.color], color: TextColor[props.color]}" class="rounded-sm font-medium font-mono px-1 md:text-2xl sm:text-lg text-sm">{{ txt }}</p>
                 </div>
                 <div class="flex items-center gap-2 cursor-pointer">
-                    <img v-if="props.color == 'green'" src="@pics/icons/arrow-white.svg">
-                    <img v-else src="@pics/icons/arrow-green.svg">
+                    <img v-if="props.color == 'green'" src="/icons/arrow-white.svg">
+                    <img v-else src="/icons/arrow-green.svg">
                     <p :style="{color: props.color == 'dark' ? Color.white : Color.dark}">مطالعه بیشتر</p>
                 </div>
             </div>
