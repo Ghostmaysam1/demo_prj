@@ -64,7 +64,7 @@ const testEmail = computed(() => {
             <button class="bg-slate-900 cursor-pointer text-slate-50 text-xl flex justify-center items-center py-4 rounded-2xl">ارسال پیام</button>
         </form>
 
-        <img v-if="width > 1024" src="@pics/illustration/star.svg" class="rotate-180 absolute -left-3 transform -translate-x-1/2">
+        <img v-if="width > 1024" src="/illustration/star.svg" class="rotate-180 absolute -left-3 transform -translate-x-1/2">
     </div>
   </div>
 </template>

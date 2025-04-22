@@ -24,8 +24,8 @@ const number = ref(index + 1 < 10 ? '0'+(index + 1) : index + 1);
     <div :style="{background: isOpen ? type != 'comment' ? '#B9FF66' : '#F3F3F3': '#F3F3F3'}" class="accordion flex w-full flex-col px-10 py-10 rounded-4xl border" dir="ltr">
         <div @click="toggleAccordion" class="flex justify-between items-center cursor-pointer">
             <p class="font-mono text-xl flex items-center gap-4 font-medium"><span v-if="type != 'comment'" class="text-4xl">{{ number }}</span> {{ question }}</p>
-            <img v-if="isOpen && type != 'comment'" src="@pics/icons/minus.svg" alt="">
-            <img v-else-if="type != 'comment'" src="@pics/icons/plus.svg" alt="">
+            <img v-if="isOpen && type != 'comment'" src="/icons/minus.svg" alt="">
+            <img v-else-if="type != 'comment'" src="/icons/plus.svg" alt="">
         </div>
         <br v-if="isOpen">
         <hr v-if="isOpen">
