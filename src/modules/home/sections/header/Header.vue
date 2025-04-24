@@ -16,16 +16,18 @@ import { isMobile } from '@/utils/windowSize';
                     </div>
                     <h3 class="font-thin text-lg col-span-3 text-justify row-span-3 row-start-5">ما عاشق کدنویسی و ساختن چیزای باحال با تکنولوژی‌های روز دنیا هستیم. از طراحی تا توسعه، کنار شماییم تا ایده‌هات رو به نرم‌افزارهایی سریع، مقیاس‌پذیر و کاربردی تبدیل کنیم.</h3>
                 </div>
-                <img src="/men.png" alt="me">
+                <img src="/men.png" alt="me" class=" relative z-50">
             </div>
 
             <div v-else class="grid grid-cols-2 gap-5">
-                <div class="flex flex-col justify-between text-center bg">
+                <div class="flex flex-col justify-between text-center bg text-slate-50">
                     <div class="flex flex-col gap-9">
-                        <h2 class="text-4xl font-bold">برج فناوری؛ جایی برای توسعه‌ راه‌حل‌های هوشمند</h2>
-                        <h3 class="font-thin text-lg col-span-3 row-span-3 row-start-5">"ما عاشق کدنویسی و ساختن چیزای باحال با تکنولوژی‌های روز دنیا هستیم. از طراحی تا توسعه، کنار شماییم تا ایده‌هات رو به نرم‌افزارهایی سریع، مقیاس‌پذیر و کاربردی تبدیل کنیم."</h3>
+                        <div class="text-right">
+                        <h2 class="text-3xl font-bold">سلام من <span class="text-[#F4CA39]">امیر اسدی</span> هستم</h2>
+                        <p class="flex items-center gap-2 font-bold"><span class="w-9 h-1 bg-[#F4CA39] block"></span> برنامه نویس</p>
                     </div>
-                    <button class="bg-slate-900 text-slate-50 text-xl flex justify-center items-center py-4 rounded-2xl">معرفی</button>
+                        <h3 class="font-thin text-lg col-span-3 text-justify row-span-3 row-start-5">ما عاشق کدنویسی و ساختن چیزای باحال با تکنولوژی‌های روز دنیا هستیم. از طراحی تا توسعه، کنار شماییم تا ایده‌هات رو به نرم‌افزارهایی سریع، مقیاس‌پذیر و کاربردی تبدیل کنیم.</h3>
+                    </div>
                 </div>
                 <div class="flex justify-center items-center h-90">
                     <img src="/men.png" alt="me" class="h-[550px] bottom-0 z-50 absolute">
@@ -33,4 +35,6 @@ import { isMobile } from '@/utils/windowSize';
             </div>
         </div>
     </div>
+    <img src="/wave1.svg" class="absolute z-10 bottom-0 w-full">
+    <img src="/wave2.svg" class="absolute z-10 bottom-0 w-full">
 </template>
