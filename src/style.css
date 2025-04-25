@@ -18,5 +18,8 @@
 
 @theme {
   --font-sans: iran-sans;
-  --font-mono: "Space Grotesk", monospace
+  --font-mono: "Space Grotesk", monospace;
+  --color-main: #F4CA39;
+  --color-dark: #191A23;
+  --color-light: #F3F3F3;
 }
