@@ -18,9 +18,6 @@ import ContactUs from './sections/contact_us/ContactUs.vue';
         <Section id="services">
             <Services />
         </Section>
-        <Section id="faq">
-            <FAQ />
-        </Section>
         <Section id="happy_clients">
             <HappyClients />
         </Section>
