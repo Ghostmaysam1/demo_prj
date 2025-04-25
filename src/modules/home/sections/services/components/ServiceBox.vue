@@ -13,21 +13,22 @@ enum Color {
 }
 
 enum Highlight {
-    white = Color.green,
+    white = Color.dark,
     green = Color.white,
-    dark = Color.white
+    dark = "#F4CA39"
 }
 
 enum TextColor {
-    white = Color.dark,
+    white = "#F4CA39",
     green = Color.dark,
     dark = Color.dark
 }
 </script>
 
 <template>
-    <div :style="{background: Color[props.color]}" dir="ltr" class="w-full hover:shadow-lg service-box p-4 border flex justify-between items-center max-w-[600px] shadow-black rounded-[40px] h-full max-h-[310px]">
-        <div class="h-full w-full">
+    <div :style="{background: Color[props.color]}" dir="ltr" class="relative w-full hover:shadow-lg service-box border-2 flex justify-between items-center max-w-[600px] shadow-black rounded-lg h-full max-h-[310px]">
+        <img src="/wave1.svg" class="absolute bottom-0 w-full opacity-20">
+        <div class="h-full w-full p-4">
             <div class="flex flex-row sm:flex-col justify-between gap-2 h-full">
                 <div class="w-full flex flex-col items-start">
                     <p v-for="(txt, index) in props.label.split(',')" :key="index" :style="{background: Highlight[props.color], color: TextColor[props.color]}" class="rounded-sm font-medium font-mono px-1 md:text-2xl sm:text-lg text-sm">{{ txt }}</p>
@@ -39,7 +40,8 @@ enum TextColor {
                 </div>
             </div>
         </div>
-        <img v-if="width > 1100" :src="props.icon" alt="icon" class="h-[100px]">
+        <!-- <img  :src="props.icon" alt="icon" class="h-[100px]"> -->
+         <p v-if="width > 1100" class="w-full" :style="{color: props.color == 'dark' ? 'white' : 'black'}">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک استلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
     </div>
 </template>
 
