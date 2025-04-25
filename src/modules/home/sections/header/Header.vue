@@ -34,7 +34,7 @@ import { isMobile } from '@/utils/windowSize';
                 </div>
             </div>
         </div>
-        <img src="/wave1.svg" class="absolute z-10 bottom-0 w-full">
-        <img src="/wave2.svg" class="absolute z-10 bottom-0 w-full">
+        <img src="/wave1.svg" class="absolute z-10 bottom-0 opacity-65 w-full">
+        <img src="/wave2.svg" class="absolute z-10 bottom-0 opacity-65 w-full">
     </div>
 </template>
