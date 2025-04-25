@@ -5,8 +5,7 @@ import SectionDots from './components/sectionDonts/SectionDots.vue';
 // Sections
 import Header from './sections/header/Header.vue';
 import Services from './sections/services/Services.vue';
-import FAQ from './sections/FAQ/FAQ.vue';
-import HappyClients from './sections/happy_clients/HappyClients.vue';
+import Team from './sections/team/Team.vue';
 import ContactUs from './sections/contact_us/ContactUs.vue';
 </script>
 
@@ -19,7 +18,7 @@ import ContactUs from './sections/contact_us/ContactUs.vue';
             <Services />
         </Section>
         <Section id="happy_clients">
-            <HappyClients />
+            <Team />
         </Section>
         <Section id="contact_us">
             <ContactUs />
