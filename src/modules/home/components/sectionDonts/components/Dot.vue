@@ -30,7 +30,7 @@ watch(() => store.section, (newValue) => {
 </script>
 
 <template>
-    <label @click="check" class="w-4 h-4 rounded-full border flex justify-center items-center">
-        <span :class="{'hidden': !dot, 'w-full h-full bg-black rounded-full': true}"></span>
+    <label @click="check" class="w-4 h-4 rounded-full border-2 border-dark outline-1 outline-light flex justify-center items-center">
+        <span :class="{'hidden': !dot, 'w-full h-full bg-main rounded-full': true}"></span>
     </label>
 </template>
