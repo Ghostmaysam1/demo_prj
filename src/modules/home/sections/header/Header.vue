@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Navbar from '@modules/navbar/Navbar.vue';
+import Icon from './components/Icon.vue';
 import { isMobile } from '@/utils/windowSize';
 </script>
 
@@ -23,10 +24,15 @@ import { isMobile } from '@/utils/windowSize';
                 <div class="flex flex-col justify-between text-center bg text-slate-50">
                     <div class="flex flex-col gap-9">
                         <div class="text-right">
-                        <h2 class="text-3xl font-bold">سلام من <span class="text-main">امیر اسدی</span> هستم</h2>
-                        <p class="flex items-center gap-2 font-bold"><span class="w-9 h-1 bg-main block"></span> برنامه نویس</p>
-                    </div>
+                            <h2 class="text-3xl font-bold">سلام من <span class="text-main">امیر اسدی</span> هستم</h2>
+                            <p class="flex items-center gap-2 font-bold"><span class="w-9 h-1 bg-main block"></span> برنامه نویس</p>
+                        </div>
                         <h3 class="font-thin text-lg col-span-3 text-justify row-span-3 row-start-5">ما عاشق کدنویسی و ساختن چیزای باحال با تکنولوژی‌های روز دنیا هستیم. از طراحی تا توسعه، کنار شماییم تا ایده‌هات رو به نرم‌افزارهایی سریع، مقیاس‌پذیر و کاربردی تبدیل کنیم.</h3>
+                        <div class="w-[40%] flex flex-row-reverse justify-center gap-5">
+                            <Icon img="/icons/email.svg" hover="lorem ipsum metn sakhtegi baraye tarahan" />
+                            <Icon img="/icons/phone.svg" hover="lorem ipsum metn sakhtegi baraye tarahan" />
+                            <Icon img="/icons/marker.svg" hover="lorem ipsum metn sakhtegi baraye tarahan" />
+                        </div>
                     </div>
                 </div>
                 <div class="flex justify-center items-center h-90">
