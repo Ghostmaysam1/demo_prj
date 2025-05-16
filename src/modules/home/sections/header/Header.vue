@@ -29,9 +29,9 @@ import { isMobile } from '@/utils/windowSize';
                         </div>
                         <h3 class="font-thin text-lg col-span-3 text-justify row-span-3 row-start-5">ما عاشق کدنویسی و ساختن چیزای باحال با تکنولوژی‌های روز دنیا هستیم. از طراحی تا توسعه، کنار شماییم تا ایده‌هات رو به نرم‌افزارهایی سریع، مقیاس‌پذیر و کاربردی تبدیل کنیم.</h3>
                         <div class="w-[40%] flex flex-row-reverse justify-center gap-5">
-                            <Icon img="/icons/email.svg" hover="lorem ipsum metn sakhtegi baraye tarahan" />
-                            <Icon img="/icons/phone.svg" hover="lorem ipsum metn sakhtegi baraye tarahan" />
-                            <Icon img="/icons/marker.svg" hover="lorem ipsum metn sakhtegi baraye tarahan" />
+                            <Icon img="/icons/email.svg" hover="با من در ایمیل در تماس باشید" />
+                            <Icon img="/icons/phone.svg" hover="با من تماس بگیر" />
+                            <Icon img="/icons/marker.svg" hover="آدرس های ما" />
                         </div>
                     </div>
                 </div>
